@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Musica| Feel every beat</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+    <!-- ================= HEADER ================= -->
+<header>
+
+    <div class="logo">
+        <h1>MUSICA</h1>
+        <p>Feel Every Beat.</p>
+    </div>
+    <button id="themeBtn" class="theme-btn">
+        🌙
+    </button>
+
+</header>
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- ============ ALL SONGS ============ -->
+
+        <section id="allSongs">
+
+            <h2>All Songs</h2>
+
+            <input
+                type="text"
+                id="searchSong"
+                placeholder="Search songs..."
+            >
+
+            <label for="genreFilter">
+                Filter by Genre
+            </label>
+
+            <select id="genreFilter">
+
+                <option value="All">All</option>
+
+                <option value="Pop">Pop</option>
+
+                <option value="Rock">Rock</option>
+
+                <option value="Hip Hop">Hip Hop</option>
+
+            </select>
+
+            <div id="songList">
+
+                <!-- Songs will come here -->
+
+            </div>
+
+        </section>
+
+
+        <!-- ============ CURRENT SONG ============ -->
+
+        <section id="songCard">
+
+            <img
+                id="songImage"
+                src=""
+                alt="Song Image"
+            >
+
+            <h2 id="songTitle">
+                Select a Song
+            </h2>
+
+            <h3 id="songArtist">
+                Artist
+            </h3>
+
+            <audio
+                id="audioPlayer"
+                controls
+            >
+            </audio>
+
+            <div class="player-controls">
+
+                <button id="prevBtn">
+                    ⏮
+                </button>
+
+                <button id="playBtn">
+                    ▶
+                </button>
+
+                <button id="nextBtn">
+                    ⏭
+                </button>
+
+            </div>
+
+            <div class="playlist-add">
+
+                <select id="playlistSelect">
+
+                    <option value="">
+                        Select Playlist
+                    </option>
+
+                </select>
+
+                <button id="addPlaylistBtn">
+
+                    Add To Playlist
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============ PLAYLIST ============ -->
+
+        <section id="playlistSection">
+
+            <h2>Create Playlist</h2>
+
+            <input
+                type="text"
+                id="playlistName"
+                placeholder="Enter playlist name"
+            >
+
+            <button id="createPlaylistBtn">
+
+                Create Playlist
+
+            </button>
+
+            <hr>
+
+            <input
+                type="text"
+                id="searchPlaylist"
+                placeholder="Search playlist..."
+            >
+
+            <h2>All Playlists</h2>
+
+            <div id="playlistList">
+
+                <!-- Playlist names -->
+
+            </div>
+
+            <hr>
+
+            <h2>Current Playlist</h2>
+
+            <div id="playlistSongs">
+
+                <!-- Songs inside selected playlist -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="songs.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
